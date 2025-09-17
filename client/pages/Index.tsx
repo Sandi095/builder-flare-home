@@ -10,17 +10,13 @@ export default function Index() {
           <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-secondary/40 blur-3xl" />
           <div className="absolute -bottom-24 -right-24 h-96 w-96 rounded-full bg-accent/30 blur-3xl" />
         </div>
-        <div className="mx-auto max-w-[1160px] px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
-          <p className="text-sm uppercase tracking-[0.2em] text-primary">Non GMO • Organic • Fresh • From Farm</p>
-          <h1 className="mt-6 text-gradient-hero text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.05] text-glow">
-            Monthly Food Plans for Healthy, Satisfied Pets
+        <div className="mx-auto max-w-[1160px] px-4 sm:px-6 lg:px-8 py-20 sm:py-28 text-center">
+          <p className="text-sm uppercase tracking-[0.2em] text-white/80">Non GMO. Organic. Fresh. From Farm.</p>
+          <h1 className="mt-4 text-gradient-hero text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.05] text-glow">
+            Monthly Food Plans for Healthy, Satisfied Pets!
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-foreground/80">
-            Balanced recipes crafted by nutritionists. Flash‑frozen for peak freshness. Delivered when you need it.
-          </p>
-          <div className="mt-8 flex flex-wrap items-center gap-4">
-            <Button className="rounded-full px-6 py-3 text-base bg-primary text-primary-foreground hover:bg-primary/90">View Plans</Button>
-            <Button variant="outline" className="rounded-full px-6 py-3 text-base border-2 border-primary text-primary hover:bg-primary/5">How it works</Button>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <Button className="rounded-full px-6 py-3 text-base bg-[#ffe074] text-[#042e40] hover:bg-[#ffd555]">View Plans</Button>
           </div>
         </div>
       </section>
