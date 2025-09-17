@@ -11,12 +11,16 @@ export default function Index() {
           <div className="absolute -bottom-24 -right-24 h-96 w-96 rounded-full bg-accent/30 blur-3xl" />
         </div>
         <div className="mx-auto max-w-[1160px] px-4 sm:px-6 lg:px-8 py-20 sm:py-28 text-center">
-          <p className="text-sm uppercase tracking-[0.2em] text-white/80">Non GMO. Organic. Fresh. From Farm.</p>
+          <p className="text-sm uppercase tracking-[0.2em] text-white/80">
+            Non GMO. Organic. Fresh. From Farm.
+          </p>
           <h1 className="mt-4 text-gradient-hero text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.05] text-glow">
             Monthly Food Plans for Healthy, Satisfied Pets!
           </h1>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <Button className="rounded-full px-6 py-3 text-base bg-[#ffe074] text-[#042e40] hover:bg-[#ffd555]">View Plans</Button>
+            <Button className="rounded-full px-6 py-3 text-base bg-[#ffe074] text-[#042e40] hover:bg-[#ffd555]">
+              View Plans
+            </Button>
           </div>
         </div>
       </section>
@@ -76,10 +80,20 @@ export default function Index() {
         <div className="mx-auto max-w-[1160px] px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-semibold">Our Farm in California</h2>
-              <p className="mt-4 text-foreground/80 max-w-prose">See how we source ingredients the right way—from local family farms to your pet’s bowl.</p>
+              <h2 className="text-3xl sm:text-4xl font-semibold">
+                Our Farm in California
+              </h2>
+              <p className="mt-4 text-foreground/80 max-w-prose">
+                See how we source ingredients the right way—from local family
+                farms to your pet’s bowl.
+              </p>
               <div className="mt-6">
-                <Button variant="outline" className="rounded-full border-2 border-primary text-primary px-6 py-3">Watch Video</Button>
+                <Button
+                  variant="outline"
+                  className="rounded-full border-2 border-primary text-primary px-6 py-3"
+                >
+                  Watch Video
+                </Button>
               </div>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
@@ -99,7 +113,15 @@ export default function Index() {
   );
 }
 
-function FeatureCard({ icon, title, desc }: { icon: React.ReactNode; title: string; desc: string }) {
+function FeatureCard({
+  icon,
+  title,
+  desc,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+}) {
   return (
     <div className="rounded-3xl border border-border bg-card p-6 shadow-sm">
       <div className="h-11 w-11 rounded-full bg-secondary/60 text-secondary-foreground grid place-items-center text-primary">
@@ -122,14 +144,23 @@ function ProductInfoSection({
 }) {
   const leftImage = (
     <div className="flex justify-center">
-      <PackBox label={animal} color={animal === "DOG" ? "from-[#4E57C0] to-[#263B9B]" : "from-[#6AD0E9] to-[#2F88A9]"} />
+      <PackBox
+        label={animal}
+        color={
+          animal === "DOG"
+            ? "from-[#4E57C0] to-[#263B9B]"
+            : "from-[#6AD0E9] to-[#2F88A9]"
+        }
+      />
     </div>
   );
 
   const rightText = (
     <div className="max-w-xl">
       <p className="text-sm text-primary/80">For</p>
-      <h3 className="mt-1 text-4xl sm:text-5xl font-extrabold text-primary">{animal}</h3>
+      <h3 className="mt-1 text-4xl sm:text-5xl font-extrabold text-primary">
+        {animal}
+      </h3>
       <p className="mt-4 text-foreground/80">
         {animal === "DOG"
           ? "From your pupper’s heart to their skin and even their gut, our meat has it covered."
@@ -138,19 +169,25 @@ function ProductInfoSection({
       <ul className="mt-6 space-y-3">
         {points.map((p, i) => (
           <li key={i} className="flex items-start gap-3">
-            <span className="mt-0.5 text-[#f4a300]"><CheckCircle2 className="h-5 w-5" /></span>
+            <span className="mt-0.5 text-[#f4a300]">
+              <CheckCircle2 className="h-5 w-5" />
+            </span>
             <span className="text-foreground/80">{p}</span>
           </li>
         ))}
       </ul>
       <div className="mt-6">
-        <Button className="rounded-full bg-gradient-to-b from-[#FFF1E1] to-[#FDD6AA] text-[#042e40] px-6 py-2 hover:from-[#ffe7c9] hover:to-[#fdca8f]">Select</Button>
+        <Button className="rounded-full bg-gradient-to-b from-[#FFF1E1] to-[#FDD6AA] text-[#042e40] px-6 py-2 hover:from-[#ffe7c9] hover:to-[#fdca8f]">
+          Select
+        </Button>
       </div>
     </div>
   );
 
   return (
-    <div className={`grid items-center gap-10 md:grid-cols-2 ${side === "left" ? "" : "md:[&>div:first-child]:order-2"}`}>
+    <div
+      className={`grid items-center gap-10 md:grid-cols-2 ${side === "left" ? "" : "md:[&>div:first-child]:order-2"}`}
+    >
       {leftImage}
       {rightText}
     </div>
@@ -160,7 +197,9 @@ function ProductInfoSection({
 function PackBox({ label, color }: { label: string; color: string }) {
   return (
     <div className="relative">
-      <div className={`relative h-64 w-48 rounded-md bg-gradient-to-br ${color} text-white p-4 shadow-2xl drop-shadow-xl rotate-[-10deg]`}>
+      <div
+        className={`relative h-64 w-48 rounded-md bg-gradient-to-br ${color} text-white p-4 shadow-2xl drop-shadow-xl rotate-[-10deg]`}
+      >
         <div className="text-xs tracking-[0.2em] opacity-90">TASTY FOOD</div>
         <div className="mt-1 text-[9px] opacity-90">FOR</div>
         <div className="mt-1 text-4xl font-extrabold leading-none">{label}</div>
@@ -169,7 +208,9 @@ function PackBox({ label, color }: { label: string; color: string }) {
           <div>ORGANIC</div>
           <div>FRESH</div>
         </div>
-        <div className="absolute bottom-3 right-4 text-[10px] opacity-80">500 mg</div>
+        <div className="absolute bottom-3 right-4 text-[10px] opacity-80">
+          500 mg
+        </div>
       </div>
       <div className="absolute -bottom-6 left-1/2 h-6 w-40 -translate-x-1/2 rounded-full bg-black/20 blur-md" />
     </div>
@@ -180,7 +221,9 @@ function TestimonialCard({ quote, name }: { quote: string; name: string }) {
   return (
     <figure className="rounded-3xl border border-border bg-card p-6 shadow-sm">
       <blockquote className="text-lg text-primary/90">“{quote}”</blockquote>
-      <figcaption className="mt-4 text-sm text-foreground/70">— {name}</figcaption>
+      <figcaption className="mt-4 text-sm text-foreground/70">
+        — {name}
+      </figcaption>
     </figure>
   );
 }

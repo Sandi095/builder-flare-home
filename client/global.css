@@ -13,8 +13,14 @@
   */
   :root {
     /* Brand fonts */
-    --font-header: "Quicksand", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-    --font-body: "Outfit", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    --font-header:
+      "Quicksand", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+      "Segoe UI Emoji";
+    --font-body:
+      "Outfit", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+      "Segoe UI Emoji";
 
     /* Light theme inspired by reference (yellow scheme) */
     --background: 32 59% 95%; /* #faf3eb */
@@ -106,26 +112,39 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body);
-    font-feature-settings: "liga" 1, "calt" 1;
+    font-feature-settings:
+      "liga" 1,
+      "calt" 1;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-header);
     color: hsl(var(--primary));
   }
 
   /* Utilities for gradient hero text and glow */
   .text-gradient-hero {
-    background: linear-gradient(144.33deg, #FFF1E1 8.9%, #FDD6AA 78.73%);
+    background: linear-gradient(144.33deg, #fff1e1 8.9%, #fdd6aa 78.73%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
   }
   .text-glow {
-    text-shadow: 0 1px 4px rgba(255,255,255,0.6), 0 0 24px #FFDF8D;
+    text-shadow:
+      0 1px 4px rgba(255, 255, 255, 0.6),
+      0 0 24px #ffdf8d;
   }
 
-  .font-display { font-family: var(--font-header); }
-  .font-body { font-family: var(--font-body); }
+  .font-display {
+    font-family: var(--font-header);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
 }

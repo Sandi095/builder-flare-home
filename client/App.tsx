@@ -28,8 +28,14 @@ const App = () => (
             <Route path="/dogs" element={<Placeholder title="Dogs" />} />
             <Route path="/cats" element={<Placeholder title="Cats" />} />
             <Route path="/fish" element={<Placeholder title="Fish" />} />
-            <Route path="/small-pets" element={<Placeholder title="Small Pets" />} />
-            <Route path="/reptiles" element={<Placeholder title="Reptiles" />} />
+            <Route
+              path="/small-pets"
+              element={<Placeholder title="Small Pets" />}
+            />
+            <Route
+              path="/reptiles"
+              element={<Placeholder title="Reptiles" />}
+            />
             <Route path="/birds" element={<Placeholder title="Birds" />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
