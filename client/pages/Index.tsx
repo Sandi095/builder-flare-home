@@ -5,7 +5,7 @@ export default function Index() {
   return (
     <div className="bg-background">
       {/* Hero */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden bg-[#042e40]">
         <div className="absolute inset-0 -z-10">
           <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-secondary/40 blur-3xl" />
           <div className="absolute -bottom-24 -right-24 h-96 w-96 rounded-full bg-accent/30 blur-3xl" />
